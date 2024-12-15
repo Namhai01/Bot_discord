@@ -2,6 +2,9 @@
 const { Client, Events, GatewayIntentBits, Collection } = require("discord.js");
 const eventHandler = require("./event/even")
 require("dotenv").config();
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 4000;
 // Create a new client instance
 const client = new Client({
   intents: [
@@ -24,3 +27,6 @@ client.on("messageCreate", (msg) => {
 
 // Log in to Discord with your client's token
 client.login(process.env.DISCORD_TOKEN);
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
