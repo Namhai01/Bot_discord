@@ -14,6 +14,10 @@ const client = new Client({
     GatewayIntentBits.MessageContent,
   ],
 });
+
+app.get('/', () =>{
+  res.send('Hello World!')
+})
 client.on("ready", () => {
   console.log("Đã online");
 });
