@@ -15,7 +15,7 @@ const client = new Client({
   ],
 });
 
-app.get('/', () =>{
+app.get('/', (req,res) =>{
   res.send('Hello World!')
 })
 client.on("ready", () => {
