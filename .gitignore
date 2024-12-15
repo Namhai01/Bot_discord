@@ -1,0 +1,56 @@
+# Compiled source code
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Dependency directories
+node_modules/
+package-lock.json
+vendor/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor-specific files
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Java
+*.war
+*.ear
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.orig
+
+# Build directories
+build/
+dist/
+target/
+
+# Other specific files
+coverage/
